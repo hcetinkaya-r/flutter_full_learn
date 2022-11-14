@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 class ColumnRowLearn extends StatelessWidget {
@@ -33,7 +35,7 @@ class ColumnRowLearn extends StatelessWidget {
               ],
             ),
           ),
-          Spacer(
+          const Spacer(
             flex: 2,
           ),
           Expanded(
@@ -50,7 +52,7 @@ class ColumnRowLearn extends StatelessWidget {
           SizedBox(
             height: CardHeight.cardHeight,
             child: Column(
-              children: <Widget>[
+              children: <Widget> [
                 Expanded(child: FlutterLogo()),
                 Expanded(child: FlutterLogo()),
                 Expanded(child: FlutterLogo()),

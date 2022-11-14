@@ -11,18 +11,17 @@ class ButtonLearn extends StatelessWidget {
         children: <Widget>[
           TextButton(
             onPressed: () {},
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(Colors.red),
+            ),
             child: Text(
               'Text Button',
               style: Theme.of(context).textTheme.subtitle1,
             ),
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.red),
-            ),
           ),
           ElevatedButton(
             onPressed: () {},
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.resolveWith((states) {
+            style: ButtonStyle(backgroundColor: MaterialStateProperty.resolveWith((states) {
               if (states.isEmpty) {
                 return Colors.green;
               }
@@ -40,11 +39,9 @@ class ButtonLearn extends StatelessWidget {
           ),
           OutlinedButton(
             onPressed: () {},
-            child: const Text('Oulined Button'),
             style: OutlinedButton.styleFrom(
-                backgroundColor: Colors.amber,
-                shape: CircleBorder(),
-                padding: EdgeInsets.all(50)),
+                backgroundColor: Colors.amber, shape: const CircleBorder(), padding: const EdgeInsets.all(50)),
+            child: const Text('Oulined Button'),
           ),
           InkWell(
             onTap: () {},

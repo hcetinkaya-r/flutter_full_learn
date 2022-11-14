@@ -25,7 +25,6 @@ class _ColorDemosViewState extends State<ColorDemosView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _backgroundColor = widget.initialColor ?? Colors.transparent;
   }
@@ -33,7 +32,7 @@ class _ColorDemosViewState extends State<ColorDemosView> {
   @override
   void didUpdateWidget(covariant ColorDemosView oldWidget) {
     super.didUpdateWidget(oldWidget);
-    print(oldWidget.initialColor != _backgroundColor && widget.initialColor != null);
+
     inspect(oldWidget.initialColor != _backgroundColor && widget.initialColor != null);
     if (widget.initialColor != _backgroundColor && widget.initialColor != null) {
       changeBackgroundColor(widget.initialColor!);

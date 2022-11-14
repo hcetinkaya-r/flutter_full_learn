@@ -31,8 +31,7 @@ class CustomWidgets extends StatelessWidget {
   }
 }
 
-class CustomFoodButton extends StatelessWidget
-    with _ColorsUtility, _PaddingUtility {
+class CustomFoodButton extends StatelessWidget with _ColorsUtility, _PaddingUtility {
   final String title;
 
   final VoidCallback onPressed;
@@ -47,17 +46,14 @@ class CustomFoodButton extends StatelessWidget
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: redColor,
-        shape: StadiumBorder(),
+        shape: const StadiumBorder(),
       ),
       onPressed: () {},
       child: Padding(
         padding: normal2xPadding,
         child: Text(
           title,
-          style: Theme.of(context)
-              .textTheme
-              .subtitle2
-              ?.copyWith(color: white, fontWeight: FontWeight.bold),
+          style: Theme.of(context).textTheme.subtitle2?.copyWith(color: white, fontWeight: FontWeight.bold),
         ),
       ),
     );

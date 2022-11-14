@@ -25,14 +25,14 @@ class ContainerSizedbox extends StatelessWidget {
 
           Container(
             height: 50,
-            padding: EdgeInsets.all(10),
-            margin: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.all(20),
             constraints: const BoxConstraints(
               maxWidth: 150,
               minWidth: 50,
             ),
-            child: Text(name * 2),
             decoration: ProjectContainerDecoration(),
+            child: Text(name * 2),
             // ProjectUtility.boxDecoration,
           ),
         ],
@@ -49,8 +49,7 @@ class ProjectUtility {
     ),
     // ignore: prefer_const_literals_to_create_immutables
     boxShadow: [
-      const BoxShadow(
-          color: Colors.green, offset: Offset(0.1, 1), blurRadius: 0.1),
+      const BoxShadow(color: Colors.green, offset: Offset(0.1, 1), blurRadius: 0.1),
     ],
     border: Border.all(width: 10, color: Colors.white12),
   );
@@ -64,8 +63,7 @@ class ProjectContainerDecoration extends BoxDecoration {
             colors: [Colors.red, Colors.black38],
           ),
           boxShadow: [
-            const BoxShadow(
-                color: Colors.green, offset: Offset(0.1, 1), blurRadius: 0.1),
+            const BoxShadow(color: Colors.green, offset: Offset(0.1, 1), blurRadius: 0.1),
           ],
           border: Border.all(width: 10, color: Colors.white12),
         );
