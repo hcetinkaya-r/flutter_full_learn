@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_101/icon_learn.dart';
-import 'package:flutter_101/navigate_detail_learn.dart';
+import 'package:flutter_101/101/icon_learn.dart';
+import 'package:flutter_101/101/navigate_detail_learn.dart';
 
 class NavigationLearn extends StatefulWidget {
   const NavigationLearn({Key? key}) : super(key: key);

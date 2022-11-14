@@ -1,8 +1,8 @@
 // ignore_for_file: dead_code
 
 import 'package:flutter/material.dart';
-import 'package:flutter_101/icon_learn.dart';
-import 'package:flutter_101/stack_learn.dart';
+import 'package:flutter_101/101/icon_learn.dart';
+import 'package:flutter_101/101/stack_learn.dart';
 
 class PageViewLearn extends StatefulWidget {
   const PageViewLearn({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_101/demo/note_demo.dart';
+import 'package:flutter_101/101/demo/note_demo.dart';
 
 class CustomWidgets extends StatelessWidget {
   final String title = 'Food';
