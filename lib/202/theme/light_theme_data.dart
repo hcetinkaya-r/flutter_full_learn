@@ -6,7 +6,7 @@ class LightTheme {
 
   LightTheme() {
     theme = ThemeData(
-      scaffoldBackgroundColor: Colors.white.withOpacity(0.8),
+
       appBarTheme: AppBarTheme(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(

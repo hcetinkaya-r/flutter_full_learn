@@ -26,7 +26,7 @@ class _PasswordTextfieldState extends State<PasswordTextfield> {
       keyboardType: TextInputType.visiblePassword,
       obscureText: _isSecure,
       obscuringCharacter: _obscuringCharacter,
-      decoration: InputDecoration(border: UnderlineInputBorder(), hintText: 'Password', suffix: _onVisibilityIcon()),
+      decoration: InputDecoration(border: const UnderlineInputBorder(), hintText: 'Password', suffix: _onVisibilityIcon()),
     );
   }
 
