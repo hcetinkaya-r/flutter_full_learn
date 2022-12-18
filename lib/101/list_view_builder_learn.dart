@@ -18,13 +18,13 @@ class _ListViewBuilderLearnState extends State<ListViewBuilderLearn> {
 
           ListView.separated(
         separatorBuilder: (context, index) {
-          return Divider(
+          return const Divider(
             color: Colors.red,
             height: 20,
           );
         },
         itemBuilder: (context, index) {
-          print(index);
+
           return SizedBox(
             height: 200,
             child: Column(

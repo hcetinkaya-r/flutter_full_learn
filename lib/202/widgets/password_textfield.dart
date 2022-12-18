@@ -10,7 +10,7 @@ class PasswordTextfield extends StatefulWidget {
 class _PasswordTextfieldState extends State<PasswordTextfield> {
   final TextEditingController _controller = TextEditingController();
   final _obscuringCharacter = '-';
-  bool _isSecure = false;
+  bool _isSecure = true;
 
   _changeLoading() {
     setState(() {
@@ -26,7 +26,12 @@ class _PasswordTextfieldState extends State<PasswordTextfield> {
       keyboardType: TextInputType.visiblePassword,
       obscureText: _isSecure,
       obscuringCharacter: _obscuringCharacter,
-      decoration: InputDecoration(border: const UnderlineInputBorder(), hintText: 'Password', suffix: _onVisibilityIcon()),
+      decoration: InputDecoration(
+        border: const UnderlineInputBorder(),
+        hintText: 'Password',
+        suffix: _onVisibilityIcon(),
+        suffixIcon: Icon(Icons.visibility),
+      ),
     );
   }
 

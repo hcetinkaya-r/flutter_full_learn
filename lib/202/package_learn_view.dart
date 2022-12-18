@@ -45,23 +45,23 @@ class _PackageLearnViewState extends State<PackageLearnView> with LaunchMixin {
               color: Theme.of(context).backgroundColor,
             ),
           ),
-          PasswordTextfield(),
+          const PasswordTextfield(),
           CheckboxListTile(
             value: _isTrue,
-            title: Text('Select'),
+            title: const Text('Select'),
             onChanged: (value) {
               value = _changeLoading();
             },
           ),
-          Expanded(flex: 2, child: LoadingBar(size: 100)),
-          Expanded(
+          const Expanded(flex: 2, child: LoadingBar(size: 100)),
+          const Expanded(
             flex: 2,
             child: SpinKitSquareCircle(
               color: Colors.black,
               size: 50,
             ),
           ),
-          Expanded(flex: 2, child: Text('HAKAN')),
+          const Expanded(flex: 2, child: Text('HAKAN')),
         ],
       ),
       floatingActionButton: FloatingActionButton(

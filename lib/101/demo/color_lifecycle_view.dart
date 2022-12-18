@@ -24,14 +24,14 @@ class _ColorLifecycleViewState extends State<ColorLifecycleView> {
             onPressed: () {
               _changeBackground();
             },
-            icon: Icon(Icons.clear),
+            icon: const Icon(Icons.clear),
           ),
         ],
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Spacer(),
+          const Spacer(),
           Expanded(child: ColorDemosView(initialColor: _backgroundColor)),
         ],
       ),

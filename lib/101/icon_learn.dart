@@ -15,6 +15,7 @@ class IconLearn extends StatelessWidget {
         children: <Widget>[
           IconButton(
             onPressed: () {},
+            // ignore: prefer_const_constructors
             icon: Icon(
               Icons.abc_outlined,
               size: IconSize.iconSmall2x,
@@ -28,7 +29,7 @@ class IconLearn extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(Icons.abc_outlined),
           ),
-          Card(
+          const Card(
             child: SizedBox(
               height: 150,
               width: 150,

@@ -33,8 +33,8 @@ class _PageViewLearnState extends State<PageViewLearn> {
           padEnds: true,
           onPageChanged: _updatePageIndex,
           children: [
-            StackLearn(),
-            IconLearn(title: 'Icon Learn'),
+            const StackLearn(),
+            const IconLearn(title: 'Icon Learn'),
             Container(color: Colors.blue),
           ],
         ),
@@ -52,12 +52,12 @@ class _PageViewLearnState extends State<PageViewLearn> {
                 onPressed: () {
                   _pageController.previousPage(duration: _DurationUtility._durationLow, curve: Curves.bounceIn);
                 },
-                child: Icon(Icons.chevron_left)),
+                child: const Icon(Icons.chevron_left)),
             FloatingActionButton(
               onPressed: () {
                 _pageController.nextPage(duration: _DurationUtility._durationLow, curve: Curves.bounceIn);
               },
-              child: Icon(Icons.chevron_right),
+              child: const Icon(Icons.chevron_right),
             )
           ],
         ));

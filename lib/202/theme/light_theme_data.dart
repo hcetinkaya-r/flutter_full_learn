@@ -7,7 +7,7 @@ class LightTheme {
   LightTheme() {
     theme = ThemeData(
 
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(30),
@@ -22,7 +22,7 @@ class LightTheme {
         colorScheme: ColorScheme.light(onPrimary: Colors.purple, onSecondary: _lightColor.orangeColor),
       ),
       checkboxTheme:
-          CheckboxThemeData(fillColor: MaterialStateProperty.all(Colors.green), side: BorderSide(color: Colors.green)),
+          CheckboxThemeData(fillColor: MaterialStateProperty.all(Colors.green), side: const BorderSide(color: Colors.green)),
       colorScheme: const ColorScheme.light(
         background: Colors.orange,
       ),

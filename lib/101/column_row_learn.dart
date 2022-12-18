@@ -43,9 +43,9 @@ class ColumnRowLearn extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                FlutterLogo(),
-                FlutterLogo(),
-                FlutterLogo(),
+                const FlutterLogo(),
+                const FlutterLogo(),
+                const FlutterLogo(),
               ],
             ),
           ),
@@ -53,11 +53,11 @@ class ColumnRowLearn extends StatelessWidget {
             height: CardHeight.cardHeight,
             child: Column(
               children: <Widget> [
-                Expanded(child: FlutterLogo()),
-                Expanded(child: FlutterLogo()),
-                Expanded(child: FlutterLogo()),
-                Spacer(),
-                Expanded(child: FlutterLogo()),
+                const Expanded(child: FlutterLogo()),
+                const Expanded(child: FlutterLogo()),
+                const Expanded(child: FlutterLogo()),
+                const Spacer(),
+                const Expanded(child: FlutterLogo()),
               ],
             ),
           )

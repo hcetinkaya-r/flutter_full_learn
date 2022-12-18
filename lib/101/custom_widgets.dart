@@ -20,7 +20,7 @@ class CustomWidgets extends StatelessWidget {
                   onPressed: () {},
                 )),
           ),
-          SizedBox(height: 150),
+          const SizedBox(height: 150),
           CustomFoodButton(
             title: title,
             onPressed: () {},
