@@ -1,9 +1,8 @@
-
-import 'package:flutter_101/202/cache/shared_learn_cache.dart';
-import 'package:flutter_101/303/regres_resources/model/resource_model.dart';
-import 'package:flutter_101/303/regres_resources/service/regres_service.dart';
-import 'package:flutter_101/product/service/project_dio.dart';
-
+import '../../../202/cache/shared_learn_cache.dart';
+import '../../../product/service/project_dio.dart';
+import '../../../product/service/project_network_manager.dart';
+import '../model/resource_model.dart';
+import '../service/regres_service.dart';
 import '../view/regres_view.dart';
 
 abstract class RegresViewModel extends LoadingState<RegresView> with ProjectDioMixin {
@@ -14,7 +13,9 @@ abstract class RegresViewModel extends LoadingState<RegresView> with ProjectDioM
   void initState() {
     super.initState();
 
-    regresService = RegresService(service);
+    regresService = RegresService(ProjectNetworkManager.instance.service);
+
+    ProjectNetworkManager.instance.addBaseHeaderToToken('veli');
     _fetch();
   }
 
@@ -23,9 +24,4 @@ abstract class RegresViewModel extends LoadingState<RegresView> with ProjectDioM
     resources = (await regresService.fetchResourceItem())?.data ?? [];
     changeLoading();
   }
-
-
-
-
-
 }
